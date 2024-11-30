@@ -3,7 +3,6 @@ FROM node:22-bookworm-slim
 
 # Install FFmpeg and HandBrake
 RUN apt-get update && \
-    apt-get install -y libcrypt1 \
     apt-get install -y ffmpeg handbrake-cli && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
